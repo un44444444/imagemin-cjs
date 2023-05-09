@@ -1,11 +1,14 @@
 {
-	"name": "imagemin",
+	"name": "imagemin-cjs",
 	"version": "8.0.1",
-	"description": "Minify images seamlessly",
+	"description": "Minify images seamlessly, imagemin-cjs commonjs",
 	"license": "MIT",
-	"repository": "imagemin/imagemin",
+	"repository": "un44444444/imagemin-cjs",
 	"type": "module",
-	"exports": "./index.js",
+	"exports": {
+		"./cjs": "./cjs/index.cjs",
+		".": "./index.js"
+	},
 	"engines": {
 		"node": ">=12"
 	},
@@ -28,7 +31,7 @@
 	],
 	"dependencies": {
 		"file-type": "^16.5.3",
-		"globby": "^12.0.0",
+		"globby": "^11.0.3",
 		"graceful-fs": "^4.2.8",
 		"junk": "^3.1.0",
 		"p-pipe": "^4.0.0",
