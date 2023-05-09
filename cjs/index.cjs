@@ -1,15 +1,15 @@
 'use strict';
 const Buffer = require('node:buffer');
-const fsPromises = require('fs').promises;
-const {promisify} = require('util');
-const path = require('path');
+const fsPromises = require('node:fs').promises;
+const {promisify} = require('node:util');
+const path = require('node:path');
 const fs = require('graceful-fs');
 const FileType = require('file-type');
 const globby = require('globby');
 const pPipe = require('p-pipe');
 const replaceExt = require('replace-ext');
 const junk = require('junk');
-const convertToUnixPath = require('slash').convertToUnixPath;
+const convertToUnixPath = require('slash');
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);

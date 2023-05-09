@@ -1,6 +1,6 @@
 {
 	"name": "imagemin-cjs",
-	"version": "8.0.1",
+	"version": "8.0.1-b2",
 	"description": "Minify images seamlessly, imagemin-cjs commonjs",
 	"license": "MIT",
 	"repository": "un44444444/imagemin-cjs",
@@ -16,7 +16,8 @@
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"cjs/index.cjs"
 	],
 	"keywords": [
 		"minify",
@@ -34,7 +35,7 @@
 		"globby": "^11.0.3",
 		"graceful-fs": "^4.2.8",
 		"junk": "^3.1.0",
-		"p-pipe": "^4.0.0",
+		"p-pipe": "^3.0.0",
 		"replace-ext": "^2.0.0",
 		"slash": "^3.0.0"
 	},
