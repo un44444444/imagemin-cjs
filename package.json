@@ -1,6 +1,6 @@
 {
 	"name": "imagemin-cjs",
-	"version": "8.0.1-b2",
+	"version": "8.0.1-b3",
 	"description": "Minify images seamlessly, imagemin-cjs commonjs",
 	"license": "MIT",
 	"repository": "un44444444/imagemin-cjs",
@@ -9,6 +9,8 @@
 		"./cjs": "./cjs/index.cjs",
 		".": "./index.js"
 	},
+	"main": "cjs/index.cjs",
+	"module": "index.js",
 	"engines": {
 		"node": ">=12"
 	},
